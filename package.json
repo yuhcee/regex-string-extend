@@ -1,0 +1,29 @@
+{
+  "name": "regex-string-extend",
+  "version": "1.0.0",
+  "description": "# regex-string-extend",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EgboUchenna/regex-string-extend.git"
+  },
+  "keywords": [
+    "javascript",
+    "prototype-oriented-programming",
+    "string",
+    "regular-expressions",
+    "ES5"
+  ],
+  "author": "Egbo Uchenna Matthew",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EgboUchenna/regex-string-extend/issues"
+  },
+  "homepage": "https://github.com/EgboUchenna/regex-string-extend#readme",
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
+}
