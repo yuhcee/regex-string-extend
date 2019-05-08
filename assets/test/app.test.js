@@ -5,6 +5,6 @@ describe('Test if String has Vowels', function() {
     expect('Uchenna'.hasVowels()).toBeTruthy();
   });
   test('should return false if string does NOT contain vowels', () => {
-    expect('Rhythm'.hasVowels()).toBe();
+    expect('Rhythm'.hasVowels()).toBeFalsy();
   });
 });
