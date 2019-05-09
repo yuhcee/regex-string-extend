@@ -46,5 +46,6 @@ describe('Test for String to words in Array', function() {
   test('should return a list of the words in the string, as an Array.', () => {
     expect('Uche'.words()).toEqual(['U', 'c', 'h', 'e']);
     expect('matt'.words()).toEqual(['m', 'a', 't', 't']);
+    expect('Nigeria'.words()).toEqual(['N', 'i', 'g', 'e', 'r', 'i', 'a']);
   });
 });
