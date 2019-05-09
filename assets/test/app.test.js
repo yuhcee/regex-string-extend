@@ -65,3 +65,9 @@ describe('Test for String toCurrency', function() {
     expect('234121.01'.toCurrency()).toBe('234,121.01');
   });
 });
+
+describe('Test for String fromCurrency', function() {
+  test('should return a number representation of the Currency String ', () => {
+    expect('11,111.11'.fromCurrency()).toBe(11, 111.11);
+  });
+});
