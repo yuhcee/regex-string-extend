@@ -30,7 +30,7 @@ String.prototype.toLower = function() {
 };
 
 String.prototype.ucFirst = function() {
-  return /\w/.exec(this)[0].toUpper() + this.substring(1).toLower();
+  return /[a-zA-Z]/.exec(this)[0].toUpper() + this.substring(1).toLower();
 };
 
 String.prototype.isQuestion = function() {
@@ -45,4 +45,12 @@ String.prototype.wordCount = function() {
   return this.words().length;
 };
 
+String.prototype.toCurrency = function() {
+  var pattern = /^[0-9]+[.]?[0-9]{1,2}/;
+  return pattern.test(this)
+    ? Number(this)
+        .toFixed(2)
+        .replace(/\d(?=(\d{3})+\.)/g, '$&,')
+    : 'Wrong number format.';
+};
 module.exports = String;
