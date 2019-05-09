@@ -62,5 +62,6 @@ describe('Test for String toCurrency', function() {
   test('should return a currency representation of the String ', () => {
     expect('11111.11'.toCurrency()).toBe('11,111.11');
     expect('11121.11'.toCurrency()).toBe('11,121.11');
+    expect('234121.01'.toCurrency()).toBe('234,121.01');
   });
 });
