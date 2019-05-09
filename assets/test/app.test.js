@@ -84,5 +84,6 @@ describe('Test for String to inverseCase', function() {
 describe('Test for String to alternatingCase', function() {
   test('should return the letters in alternating cases ', () => {
     expect('Onomatopoeia'.alternateCase()).toBe('oNoMaToPoEiA');
+    expect('Indomitable'.alternateCase()).toBe('iNdOmItAbLe');
   });
 });
