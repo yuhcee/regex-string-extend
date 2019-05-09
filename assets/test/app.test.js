@@ -68,6 +68,6 @@ describe('Test for String toCurrency', function() {
 
 describe('Test for String fromCurrency', function() {
   test('should return a number representation of the Currency String ', () => {
-    expect('11,111.11'.fromCurrency()).toBe(11, 111.11);
+    expect('11,111.11'.fromCurrency()).toBe(11,111.11);
   });
 });
