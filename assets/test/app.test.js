@@ -23,3 +23,10 @@ describe('Test for String to Lower Case', function() {
     expect('EGBO'.toLower()).toBe('egbo');
   });
 });
+
+describe('Test for String to ucFirst', function() {
+  test('should return the String but changes the First Character to an Upper case.', () => {
+    expect('uchenna'.ucFirst()).toBe('Uchenna');
+    expect('matthew'.ucFirst()).toBe('Matthew');
+  });
+});
