@@ -72,3 +72,10 @@ describe('Test for String fromCurrency', function() {
     expect('1000011'.fromCurrency()).toBe('Wrong number format.');
   });
 });
+
+describe('Test for String to inverseCase', function() {
+  test('should return each letter in the string as an inverse of its current case ', () => {
+    expect('Mr. Ben'.invertCase()).toBe('mR. bEN');
+    expect('i aM uCHE'.invertCase()).toBe('I Am Uche');
+  });
+});
