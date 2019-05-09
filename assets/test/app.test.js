@@ -13,5 +13,8 @@ describe('Test for String to Upper Case', function() {
   test('should return the String with all characters in upper cases as applicable', () => {
     expect('Uchenna'.toUpper()).toBe('UCHENNA');
   });
-  test('eGbO ucHeNnA'.toUpper()).toBe('EGBO UCHENNA');
+
+  test('should return the String with all characters in upper cases as applicable', () => {
+    expect('eGbO ucHeNnA'.toUpper()).toBe('EGBO UCHENNA');
+  });
 });
