@@ -36,4 +36,10 @@ String.prototype.ucFirst = function() {
 String.prototype.isQuestion = function() {
   return /^\w.+\?$/.test(this);
 };
+
+String.prototype.words = function() {
+  console.log(this.match(/\w/g));
+  return this.match(/\w/g);
+};
+
 module.exports = String;
