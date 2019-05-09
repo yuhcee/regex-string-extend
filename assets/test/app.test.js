@@ -85,5 +85,6 @@ describe('Test for String to alternatingCase', function() {
   test('should return the letters in alternating cases ', () => {
     expect('Onomatopoeia'.alternateCase()).toBe('oNoMaToPoEiA');
     expect('Indomitable'.alternateCase()).toBe('iNdOmItAbLe');
+    expect('DecaGoN'.alternateCase()).toBe('dEcAgOn');
   });
 });
