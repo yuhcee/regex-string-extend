@@ -35,5 +35,6 @@ describe('Test for String to ucFirst', function() {
 describe('Test if String isQuestion', function() {
   test('should return true if the string is a question (ending with a question mark).', () => {
     expect('What is your name?'.isQuestion()).toBeTruthy();
+    expect('Are you Ok  ?'.isQuestion()).toBeTruthy();
   });
 });
