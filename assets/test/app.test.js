@@ -76,6 +76,7 @@ describe('Test for String fromCurrency', function() {
 describe('Test for String to inverseCase', function() {
   test('should return each letter in the string as an inverse of its current case ', () => {
     expect('Mr. Ben'.invertCase()).toBe('mR. bEN');
+    expect('i AM A WINNER'.invertCase()).toBe('i am a winner');
     expect('i aM uCHE'.invertCase()).toBe('I Am Uche');
   });
 });
