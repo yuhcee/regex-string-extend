@@ -49,3 +49,9 @@ describe('Test for String to words in Array', function() {
     expect('Nigeria'.words()).toEqual(['N', 'i', 'g', 'e', 'r', 'i', 'a']);
   });
 });
+
+describe('Test for wordCount in a String', function() {
+  test('should return the number of words in the string', () => {
+    expect('Uche'.wordCount()).toBe(4);
+  });
+});
