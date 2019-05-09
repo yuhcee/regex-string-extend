@@ -60,4 +60,14 @@ String.prototype.fromCurrency = function() {
     ? this.replace(/,(?=\d)/g, '') // if found any comma possibly been followed by any digits, replace it with an empty space.
     : 'Wrong number format.';
 };
+
+String.prototype.invertCase = function() {
+  var inverted = '';
+  for (var index = 0; index < this.length; index++) {
+    /[a-z]/.test(this[index])
+      ? (inverted += this[index].toUpper())
+      : (inverted += this[index].toLower());
+  }
+  return inverted;
+};
 module.exports = String;
