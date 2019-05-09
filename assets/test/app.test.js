@@ -88,3 +88,9 @@ describe('Test for String to alternatingCase', function() {
     expect('DecaGoN'.alternateCase()).toBe('dEcAgOn');
   });
 });
+
+describe('Test for String to numberWords', function() {
+  test('should return the numbers in words ', () => {
+    expect('325'.numberWords()).toBe('three two five');
+  });
+});
