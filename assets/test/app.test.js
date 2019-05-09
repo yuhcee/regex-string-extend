@@ -57,3 +57,9 @@ describe('Test for wordCount in a String', function() {
     expect('Unbelievable'.wordCount()).toBe(12);
   });
 });
+
+describe('Test for String toCurrency', function() {
+  test('should return a currency representation of the String ', () => {
+    expect('11111.11'.toCurrency()).toBe('11,111.11');
+  });
+});
