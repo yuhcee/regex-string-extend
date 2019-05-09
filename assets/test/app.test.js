@@ -18,3 +18,11 @@ describe('Test for String to Upper Case', function() {
     expect('eGbO ucHeNnA'.toUpper()).toBe('EGBO UCHENNA');
   });
 });
+
+describe('Test for String to Lower Case', function() {
+  test('should return the String with all characters in their lower cases as applicable', () => {
+    expect('Uchenna'.toLower()).toBe('uchenna');
+    expect('mATTHew'.toLower()).toBe('matthew');
+    expect('EGBO'.toLower()).toBe('egbo');
+  });
+});
