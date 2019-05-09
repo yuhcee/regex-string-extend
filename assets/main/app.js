@@ -29,4 +29,8 @@ String.prototype.toLower = function() {
   return lowerCased;
 };
 
+String.prototype.ucFirst = function() {
+  return /\w/.exec(this)[0].toUpper() + this.substring(1).toLower();
+};
+
 module.exports = String;
