@@ -33,4 +33,7 @@ String.prototype.ucFirst = function() {
   return /\w/.exec(this)[0].toUpper() + this.substring(1).toLower();
 };
 
+String.prototype.isQuestion = function() {
+  return /^\w.+\?$/.test(this);
+};
 module.exports = String;
