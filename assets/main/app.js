@@ -45,5 +45,4 @@ String.prototype.wordCount = function() {
   return this.words().length;
 };
 
-
 module.exports = String;

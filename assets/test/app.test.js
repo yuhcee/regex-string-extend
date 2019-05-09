@@ -54,5 +54,6 @@ describe('Test for wordCount in a String', function() {
   test('should return the number of words in the string', () => {
     expect('Uche'.wordCount()).toBe(4);
     expect('I am Enough'.wordCount()).toBe(9);
+    expect('Unbelievable'.wordCount()).toBe(12);
   });
 });
