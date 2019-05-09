@@ -41,3 +41,9 @@ describe('Test if String isQuestion', function() {
     expect('I have no name'.isQuestion()).toBeFalsy();
   });
 });
+
+describe('Test for String to words in Array', function() {
+  test('should return a list of the words in the string, as an Array.', () => {
+    expect('Uche'.words()).toEqual(['U', 'c', 'h', 'e']);
+  });
+});
