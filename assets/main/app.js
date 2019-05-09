@@ -70,4 +70,14 @@ String.prototype.invertCase = function() {
   }
   return inverted;
 };
+
+String.prototype.alternateCase = function() {
+  var alternatedString = /[a-zA-Z]/.exec(this)[0].toLower() + this[1].toUpper();
+  for (var index = 2; index < this.length; index++) {
+    index % 2 === 0
+      ? (alternatedString += this[index].toLower())
+      : (alternatedString += this[index].toUpper());
+  }
+  return alternatedString;
+};
 module.exports = String;
