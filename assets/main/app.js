@@ -38,8 +38,12 @@ String.prototype.isQuestion = function() {
 };
 
 String.prototype.words = function() {
-  console.log(this.match(/\w/g));
   return this.match(/\w/g);
 };
+
+String.prototype.wordCount = function() {
+  return this.words().length;
+};
+
 
 module.exports = String;
