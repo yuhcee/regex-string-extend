@@ -16,4 +16,17 @@ String.prototype.toUpper = function() {
   return upperCased;
 };
 
+String.prototype.toLower = function() {
+  var lowerCased = '';
+  for (var index = 0; index < this.length; index++) {
+    var currentValue = this.charCodeAt(index);
+    if (currentValue > 64 && currentValue < 91) {
+      lowerCased += String.fromCharCode(currentValue + 32);
+    } else {
+      lowerCased += this[index];
+    }
+  }
+  return lowerCased;
+};
+
 module.exports = String;
