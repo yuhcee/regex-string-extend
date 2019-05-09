@@ -37,4 +37,7 @@ describe('Test if String isQuestion', function() {
     expect('What is your name?'.isQuestion()).toBeTruthy();
     expect('Are you Ok  ?'.isQuestion()).toBeTruthy();
   });
+  test('should return false if the string is NOT a question (ending without a question mark).', () => {
+    expect('I have no name'.isQuestion()).toBeFalsy();
+  });
 });
