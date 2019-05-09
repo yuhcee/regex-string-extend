@@ -12,9 +12,6 @@ describe('Test if String has Vowels', function() {
 describe('Test for String to Upper Case', function() {
   test('should return the String with all characters in upper cases as applicable', () => {
     expect('Uchenna'.toUpper()).toBe('UCHENNA');
-  });
-
-  test('should return the String with all characters in upper cases as applicable', () => {
     expect('eGbO ucHeNnA'.toUpper()).toBe('EGBO UCHENNA');
   });
 });
