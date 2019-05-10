@@ -46,18 +46,16 @@ String.prototype.wordCount = function() {
 };
 
 String.prototype.toCurrency = function() {
-  var pattern = /^([0-9]+)[.]?([0-9]{1,2})/; // collect input format, to start with digit followed by optional (.) and trims at max two numbers after the dot
-  return pattern.test(this) // test if input is correct
-    ? Number(this)
-        .toFixed(2)
-        .replace(/\d(?=(\d{3})+\.)/g, '$&,') // if found at any place, a digit with possibly 3 trailing digits, replace the number with itself and add a comma.
-    : 'Wrong number format.';
+  /^([0-9]+)[.]?([0-9]{1,2})/.test(this);
+  return Number(this)
+    .toFixed(2)
+    .replace(/\d(?=(\d{3})+\.)/g, '$&,');
 };
 
 String.prototype.fromCurrency = function() {
-  var value = /(\d+,)+/; // collect input format, to be a digit or group of digits with a trailing comma and other numbers.
+  var value = /(\d+,)+/;
   return value.test(this)
-    ? this.replace(/,(?=\d)/g, '') // if found any comma possibly been followed by any digits, replace it with an empty space.
+    ? this.replace(/,(?=\d)/g, '')
     : 'Wrong number format.';
 };
 

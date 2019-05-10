@@ -4,7 +4,7 @@
   "description": "# regex-string-extend",
   "main": "app.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -25,5 +25,9 @@
   "homepage": "https://github.com/EgboUchenna/regex-string-extend#readme",
   "devDependencies": {
     "jest": "^24.8.0"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {}
 }
