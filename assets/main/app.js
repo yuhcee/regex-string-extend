@@ -100,4 +100,8 @@ String.prototype.numberWords = function() {
   }
   return wordNumbers.join(' ');
 };
+
+String.prototype.isDigit = function() {
+  return /(\d)(?=\d+)/.test(this) ? false : true;
+};
 module.exports = String;
