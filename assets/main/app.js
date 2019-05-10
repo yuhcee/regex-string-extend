@@ -80,4 +80,24 @@ String.prototype.alternateCase = function() {
   }
   return alternatedString;
 };
+
+String.prototype.numberWords = function() {
+  var numberKeys = [
+    'zero',
+    'one',
+    'two',
+    'three',
+    'four',
+    'five',
+    'six',
+    'seven',
+    'eight',
+    'nine'
+  ];
+  var wordNumbers = [];
+  for (var index = 0; index < this.length; index++) {
+    wordNumbers.push(numberKeys[this[index]]);
+  }
+  return wordNumbers.join(' ');
+};
 module.exports = String;
