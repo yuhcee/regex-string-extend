@@ -98,3 +98,12 @@ describe('Test for String to numberWords', function() {
     );
   });
 });
+
+describe('Test if String isDigit', function() {
+  test('should return true if the string is a single digit(one number)  ', () => {
+    expect('3'.isDigit()).toBeTruthy();
+  });
+  test('should return false if the string is NOT a single digit(one number)  ', () => {
+    expect('34'.isDigit()).toBeFalsy();
+  });
+});
