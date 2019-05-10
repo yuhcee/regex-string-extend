@@ -92,5 +92,6 @@ describe('Test for String to alternatingCase', function() {
 describe('Test for String to numberWords', function() {
   test('should return the numbers in words ', () => {
     expect('325'.numberWords()).toBe('three two five');
+    expect('080'.numberWords()).toBe('zero eight zero');
   });
 });
